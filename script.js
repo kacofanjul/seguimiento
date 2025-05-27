@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return Math.max(1, diffDays); // Mínimo 1 día para visualización
     }
 
-    fetch('proyectos.json')
+    fetch('Proyectos.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
