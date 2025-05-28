@@ -1,56 +1,53 @@
 [
-  {
-    "id": "proyecto_alpha",
-    "nombre": "Desarrollo App Móvil X",
-    "descripcion": "Aplicación para gestión de tareas personales.",
-    "responsable": "Ana Pérez",
-    "estadoGeneral": "En Progreso", // Podría ser: Pendiente, En Progreso, Retrasado, En Riesgo, Completado
-    "fechaInicioGeneralEstimada": "2024-01-15",
-    "fechaFinGeneralEstimada": "2024-06-30",
-    "etapas": [
-      {
-        "nombre": "1. Definición y Alcance",
-        "estado": "Completada", // Pendiente, En Progreso, Completada, Bloqueada
-        "fechaInicioEstimada": "2024-01-15",
-        "fechaFinEstimada": "2024-01-30",
-        "fechaInicioReal": "2024-01-16",
-        "fechaFinReal": "2024-01-28",
-        "progreso": 100 // Opcional, si quieres un % específico
-      },
-      {
-        "nombre": "2. Diseño UX/UI",
-        "estado": "En Progreso",
-        "fechaInicioEstimada": "2024-02-01",
-        "fechaFinEstimada": "2024-03-15",
-        "fechaInicioReal": "2024-02-05",
-        "fechaFinReal": null, // Aún no finaliza
-        "progreso": 60
-      },
-      {
-        "nombre": "3. Desarrollo Frontend",
-        "estado": "Pendiente",
-        "fechaInicioEstimada": "2024-03-16",
-        "fechaFinEstimada": "2024-05-15",
-        "fechaInicioReal": null,
-        "fechaFinReal": null,
-        "progreso": 0
-      },
-      {
-        "nombre": "4. Desarrollo Backend",
-        "estado": "Pendiente",
-        "fechaInicioEstimada": "2024-03-20", // Puede haber solapamiento
-        "fechaFinEstimada": "2024-05-20",
-        "fechaInicioReal": null,
-        "fechaFinReal": null,
-        "progreso": 0
-      }
-      // ... más etapas
-    ]
-  },
-  {
-    "id": "proyecto_beta",
-    "nombre": "Migración Servidores Cloud",
-    // ... más datos del proyecto y sus etapas
-  }
-  // ... hasta 10 proyectos
+    {
+        "id": "proyecto_alpha",
+        "nombre": "Desarrollo App Móvil X",
+        "descripcion": "Aplicación para gestión de tareas personales.",
+        "responsable": "Ana Pérez",
+        "estadoGeneral": "En Progreso",
+        "fechaInicioGeneralEstimada": "2024-01-15",
+        "fechaFinGeneralEstimada": "2024-06-30",
+        "etapas": [
+            {
+                "nombre": "1. Definición y Alcance",
+                "estado": "Completada",
+                "fechaInicioEstimada": "2024-01-15",
+                "fechaFinEstimada": "2024-01-30",
+                "fechaInicioReal": "2024-01-16",
+                "fechaFinReal": "2024-01-28",
+                "progreso": 100
+            },
+            {
+                "nombre": "2. Diseño UX/UI",
+                "estado": "En Progreso",
+                "fechaInicioEstimada": "2024-02-01",
+                "fechaFinEstimada": "2024-03-15",
+                "fechaInicioReal": "2024-02-05",
+                "fechaFinReal": null,
+                "progreso": 60
+            },
+            {
+                "nombre": "3. Desarrollo Frontend",
+                "estado": "Pendiente",
+                "fechaInicioEstimada": "2024-03-16",
+                "fechaFinEstimada": "2024-05-15",
+                "fechaInicioReal": null,
+                "fechaFinReal": null,
+                "progreso": 0
+            },
+            {
+                "nombre": "4. Desarrollo Backend",
+                "estado": "Pendiente",
+                "fechaInicioEstimada": "2024-03-20",
+                "fechaFinEstimada": "2024-05-20",
+                "fechaInicioReal": null,
+                "fechaFinReal": null,
+                "progreso": 0
+            }
+        ]
+    },
+    {
+        "id": "proyecto_beta",
+        "nombre": "Migración Servidores Cloud"
+    }
 ]
