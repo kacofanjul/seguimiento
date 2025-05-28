@@ -1,62 +1,36 @@
-body { font-family: sans-serif; margin: 0; background-color: #f4f4f4; color: #333; }
-header { background-color: #333; color: white; padding: 1em; text-align: center; }
-#proyectos-container { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; }
-.proyecto-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin: 15px;
-    padding: 20px;
-    width: 400px; /* O ajusta según necesidad */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-.proyecto-card h2 { margin-top: 0; color: #0056b3; }
-.etapa {
-    padding: 10px;
-    margin-bottom: 8px;
-    border-radius: 4px;
-    border-left: 5px solid transparent; /* Se usará para el estado */
-}
-.etapa h3 { margin: 0 0 5px 0; font-size: 1em; }
-.etapa p { margin: 2px 0; font-size: 0.9em; color: #555; }
-.etapa.Completada { border-left-color: #28a745; background-color: #e9f5ec; }
-.etapa.EnProgreso { border-left-color: #ffc107; background-color: #fff8e1; }
-.etapa.Pendiente { border-left-color: #6c757d; background-color: #f8f9fa; }
-.etapa.Bloqueada { border-left-color: #dc3545; background-color: #fbe<y_bin_273>e; }
-
-/* Estilos para el timeline simple */
 .timeline-container {
-    margin-top: 10px;
+    margin-top: 15px;
     padding-top: 10px;
     border-top: 1px dashed #ccc;
 }
+.timeline-container h4 {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    color: #444;
+}
 .timeline-bar {
-    display: flex;
-    height: 20px;
-    background-color: #eee;
-    border-radius: 3px;
+    display: flex; /* Fundamental para que los segmentos se pongan uno al lado del otro */
+    height: 25px;
+    background-color: #e9ecef; /* Un fondo base para la barra */
+    border-radius: 4px;
     margin-bottom: 5px;
     font-size: 0.7em;
-    line-height: 20px;
+    line-height: 25px; /* Centra el texto verticalmente */
     color: white;
-    overflow: hidden; /* Para asegurar que los textos no se salgan */
+    overflow: hidden; /* Para que los segmentos no se salgan si suman más del 100% por errores de cálculo */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
 }
 .timeline-segment {
     height: 100%;
     text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    box-sizing: border-box; /* Incluye padding y border en el width */
-    border-right: 1px solid rgba(255,255,255,0.3); /* Separador sutil */
+    white-space: nowrap; /* Evita que el texto se parta en varias líneas dentro del segmento */
+    overflow: hidden; /* Oculta el texto que no quepa */
+    text-overflow: ellipsis; /* Añade "..." si el texto es muy largo */
+    box-sizing: border-box;
+    padding: 0 5px; /* Un poco de espacio interno */
+    /* Colores según estado */
 }
-.timeline-segment:last-child {
-    border-right: none;
-}
-/* Colores para los segmentos del timeline (iguales o similares a los de la etapa) */
-.timeline-Completada { background-color: #28a745; }
-.timeline-EnProgreso { background-color: #ffc107; color: #333; } /* Texto oscuro para amarillo */
-.timeline-Pendiente { background-color: #6c757d; }
-.timeline-Bloqueada { background-color: #dc3545; }
-
-footer { text-align: center; padding: 1em; background-color: #333; color: #aaa; font-size: 0.9em; }
+.timeline-segment.timeline-Completada { background-color: #28a745; }
+.timeline-segment.timeline-EnProgreso { background-color: #ffc107; color: #333; } /* Texto oscuro para amarillo */
+.timeline-segment.timeline-Pendiente { background-color: #6c757d; }
+.timeline-segment.timeline-Bloqueada { background-color: #dc3545; }
