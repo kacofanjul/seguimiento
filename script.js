@@ -97,12 +97,12 @@ document.addEventListener('DOMContentLoaded', () => {
                                 // representa bien el total para una barra continua.
                                 // Para solapamientos reales, se necesitaría una lógica más compleja o una librería Gantt.
                                 html += `
-    <div class="timeline-segment timeline-${etapa.estado.replace(/\s+/g, '')}"
-         style="width: ${porcentajeAncho}%;"
-         title="${etapa.nombre} (${etapa.estado}): ${etapa.fechaInicioEstimada} - ${etapa.fechaFinEstimada}">
-        ${etapa.nombre.substring(0, Math.floor(porcentajeAncho/4))} <!-- Ajusta la lógica de substring para que quepa -->
-    </div>
-`;
+                                    <div class="timeline-segment timeline-${etapa.estado.replace(/\s+/g, '')}"
+                                         style="width: ${porcentajeAncho}%;"
+                                         title="${etapa.nombre} (${etapa.estado}): ${etapa.fechaInicioEstimada} - ${etapa.fechaFinEstimada}">
+                                        ${etapa.nombre.substring(0,10)}... <!-- Nombre corto para el segmento -->
+                                    </div>
+                                `;
                             }
                         });
                         html += `</div></div>`; // Cierre de timeline-bar y timeline-container
